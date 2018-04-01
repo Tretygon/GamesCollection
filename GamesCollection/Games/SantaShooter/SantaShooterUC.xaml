@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="SantaShooter.SantaShooterUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SantaShooter"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="750" Loaded="OnLoaded" Focusable="True"  SizeChanged="OnSizeChanged" >
+    <Grid Margin="0,0,0,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*" />
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="Griddy"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="WhiteSmoke" Grid.Column="0"/>
+        <Grid x:Name="InfoGrid" Grid.Column="1">
+            <Grid Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Name="HP1" Grid.Row="0"/>
+                <Image Name="HP2" Grid.Row="1"/>
+                <Image Name="HP3" Grid.Row="2"/>
+                <Image Name="HP4" Grid.Row="3"/>
+                <Image Name="HP5" Grid.Row="4"/>
+                
+                <Label Content="Score" FontWeight="DemiBold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Grid.Row="6"/>
+                <Label VerticalContentAlignment="Top" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center"  Name="ScoreLabel" Content="0" Grid.Row="7"/>
+                <CheckBox Name="ImmortalityCheckBox" Checked="ImmortalityCheckBox_Checked" Unchecked="ImmortalityCheckBox_Unchecked" Content="Immortality" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="13" Grid.Row="7" />
+            </Grid>
+           
+            
+            
+            
+        </Grid>
+    </Grid>
+</UserControl>

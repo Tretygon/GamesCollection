@@ -1,8 +1,8 @@
-﻿<Application x:Class="GamesCollection.App"
+﻿<Application x:Class="GameCollection.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:GamesCollection"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:GameCollection"
+             >
     <Application.Resources>
          
     </Application.Resources>

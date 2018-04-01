@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="GameCollection.CrossRoads"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameCollection"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" >
+    <UserControl.Resources>
+        <ResourceDictionary Source="MyStyles.xaml"/>
+    </UserControl.Resources>
+    <Grid Background="{StaticResource MenuBackground}">
+        <Grid.RowDefinitions >
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Tetris" Grid.Row="0" Click="TetrisButton_Click" />
+        <Button Content="Snake" Grid.Row="1" Click="SnakeButton_Click"/>
+        <Button Content="Santa Shooter" Grid.Row="2" Click="SantaButton_Click"/>
+        <Button Content="Quit" Grid.Row="3" Click="QuitButton_Click"/>
+
+    </Grid>
+</UserControl>

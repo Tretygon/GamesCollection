@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GamesCollection
+namespace GameCollection
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,13 @@ namespace GamesCollection
         public MainWindow()
         {
             InitializeComponent();
+            //SizeToContent = SizeToContent.WidthAndHeight;
+            SizeChanged += (a, b) =>
+            {
+                Left = (SystemParameters.PrimaryScreenWidth - ActualWidth) / 2;
+                Top = (SystemParameters.PrimaryScreenHeight - ActualHeight) / 2;
+            };
+           
         }
     }
 }
